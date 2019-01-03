@@ -1,0 +1,344 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #35424a;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+}
+
+/* Nav */
+
+nav {
+    height: 40px;
+    width: 100%;
+    background-color: #35424a;
+    color: #fff;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    float: left;
+
+}
+
+nav a {
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 0;
+    color: #fff;
+    text-decoration: none;
+
+}
+
+nav a:hover {
+    color: #cccccc;
+    font-weight: bold;
+}
+
+nav a#openup {
+    display: none;
+}
+
+.cf:before,
+.cf:after {
+    content: "";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    zoom: 1;
+}
+
+.cf .current a {
+    color: #e8491d;
+    font-weight: bold;
+}
+
+.derp {
+    display: inline-block;
+    float: right;
+    text-align: left;
+    text-indent: 25px;
+    padding: 5px 20px 5px 0;
+    margin: 5px;
+
+}
+
+.branding {
+    display: inline-block;
+    text-align: left;
+    text-indent: 25px;
+    padding: 5px 20px 5px 0;
+    margin: 5px;
+
+}
+
+/* Showcase -- Index.html */
+#showcase {
+    min-height: 400px;
+    background: url('../img/lightning.jpg') no-repeat 0 -600px;
+    text-align: center;
+    color: #fff;
+}
+
+#showcase h1 {
+    margin-top: 100px;
+    font-size: 4rem;
+    color: #e8491d;
+    margin-bottom: 10px;
+}
+
+#showcase p {
+    font-size: 1rem;
+    text-align: center;
+}
+
+
+
+/* Contact Section */
+#newsletter {
+    padding: 15px;
+    color: #ffffff;
+    background: #35424a;
+    border-top: #e8491d 5px solid;
+}
+
+#newsletter h1 {
+    float: left;
+}
+
+#newsletter form {
+    float: right;
+    margin-top: 15px;
+}
+
+#newsletter input[type="email"] {
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+}
+
+.button_1 {
+    height: 38px;
+    background: #e8491d;
+    border: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Boxes */
+
+#boxes {
+    margin-top: 20px;
+}
+
+#boxes .box {
+    float: left;
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+}
+
+#boxes .box img {
+    width: 90px;
+}
+
+#boxes h2 {
+    width: 95%;
+    text-align: center;
+}
+
+#boxes p {
+    width: 95%;
+    text-align: center;
+}
+
+/* About Section */
+aside#sidebar {
+    float: right;
+    width: 30%;
+    margin-top: 10px;
+}
+
+article#main-col {
+    float: left;
+    width: 65%;
+}
+
+.dark {
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: #35424a;
+    color: #fff;
+}
+
+/* Services Section */
+ul#services li {
+    list-style: none;
+    padding: 20px;
+    border: #ccc solid 1px;
+    margin-bottom: 5px;
+    background: #e6e6e6;
+}
+
+article#main-col .title {
+    text-align: center;
+    width: 65%;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    margin-top: 20px;
+    color: #ffffff;
+    background-color: #e8491d;
+    text-align: center;
+}
+
+/* Sticky Footer Calc */
+.content {
+    min-height: calc(100vh - 70px);
+}
+
+/* Media Query for Nav*/
+
+@media screen and (max-width: 480px) {
+
+    header {
+        padding: 0;
+        min-height: 1rem;
+    }
+
+    nav {
+        height: auto;
+        border-bottom: 0;
+    }
+
+    nav ul {
+        display: none;
+        height: auto;
+    }
+
+    nav li {
+        width: 100%;
+        float: left;
+        position: relative;
+    }
+
+    nav a {
+        text-align: left;
+        width: 100%;
+        font-size: 1rem;
+        text-indent: 25px;
+        background: #35424a;
+
+    }
+
+    .derp {
+        font-size: .6rem;
+    }
+
+    .cf .branding {
+        font-size: 1rem;
+        text-align: left;
+        margin: 0 auto;
+        padding-top: 1rem;
+    }
+
+    nav a:hover {
+        background: #35424a;
+    }
+
+    nav a#openup:after {
+        content: "|||";
+        transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        /* IE 9 */
+        -webkit-transform: rotate(-90deg);
+        /* Safari and Chrome */
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        position: absolute;
+        right: 5px;
+        top: 20px;
+    }
+
+    nav a#openup {
+        display: block;
+        background-color: #35424a;
+        width: 100%;
+        position: relative;
+
+    }
+}
+
+/* Media Queries */
+@media(max-width: 768px) {
+
+    #newsletter h1,
+    #newsletter form,
+    #boxes .box,
+    article#main-col,
+    aside#sidebar {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    header {
+        padding-bottom: 20px;
+    }
+
+    #showcase h1 {
+        margin-top: 40px;
+        font-size: 3rem;
+    }
+
+    #showcase {
+        min-height: 300px;
+        background-position: 0px;
+    }
+
+    #newsletter button,
+    .quote button {
+        display: inline-block;
+    }
+
+    #newsletter form input[type="email"],
+    .quote input,
+    .quote textarea {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    ul#services li {
+        width: 67%;
+    }
+}

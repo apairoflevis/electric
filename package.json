@@ -1,0 +1,11 @@
+{
+  "name": "boogaloo",
+  "version": "1.0.0",
+  "description": "Attempt at a very simple small business website with HTML/CSS/jQuery",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andrew De La Paz",
+  "license": "MIT"
+}
